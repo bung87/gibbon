@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>gibbon</title>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css">
+    <style type="text/css">
+#showtimeinfo,#shownameinfo{width: 50%}
+#showtimeinfo p,#shownameinfo p{color: #ccc;margin-left: 140px;margin-top: 160px}
+        #showtimeinfo input,#shownameinfo input{margin-left: 140px;color: #fff;background: transparent;border: none;outline: none;font-size: 38px;}
+    </style>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/zepto.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/fx.js"></script>
+</head>
+<body>
+<div id="main">
+    <ul>
+        <li id="step1">
+            <div class="desc"><strong>1</strong> <span class="desc2">book your showtime:</span>
+                <input type="number" id="y" name="year" min="2014" max="2015" value="2014"/>&nbsp;
+                <input type="number" id="m" name="month" min="1" max="12" value="4"/>&nbsp;
+                <input type="number" id="d" name="dat" min="1" max="31" value="1"/>&nbsp;&nbsp;
+                <input type="number" id="h" name="hours" min="0" max="23" value="1"/>&nbsp;&nbsp;<span
+                        style="color:#fff">:</span>&nbsp;
+                <input type="number" id="mm" name="mit" min="0" max="59" value="1"/>
+
+            </div>
+            <div class="ct">
+                <button class="btn" id="btn1">ok</button>
+            </div>
+        </li>
+        <li id="step2">
+            <div class="desc"><strong>2</strong> <span class="desc2">make your dot sequence:</span></div>
+            <div id="sequence">
+                <div id="dots_wrapper">
+                    <div class="clearfix" id="dots">
+                        <ul>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>1</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>4</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>5</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>6</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>7</p>
+                            </li>
+                            <li>
+                                <div class="dot_gray"></div>
+                                <div class="dot_blue"></div>
+                                <p>8</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ct">
+                <button class="btn" id="btn2">ok</button>
+            </div>
+        </li>
+        <li id="showtime" class="clearfix">
+        <div id="showtimeinfo" class="l">
+        <p>show time</p>
+            <input type="text" name="showtime" id="showtime_input" value=""/>
+        </div>
+            <div id="shownameinfo" class="r">
+    <p>show name</p>
+<input type="text" name="showname" id="showname_input" value=""/>
+            </div>
+
+        </li>
+        </ul>
+</div>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+</body>
+</html>

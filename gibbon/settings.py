@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = (
+    'gibbon',
     # 'django.contrib.sites',
     # 'threadedcomments',
     # 'django.contrib.comments',
@@ -95,12 +96,12 @@ USE_TZ = True
 #MEDIA_URL = '/media/'
 
 
-STATIC_ROOT = os.path.join(DIRNAME, 'static')
+STATIC_ROOT = os.path.join(DIRNAME, 'asserts')
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(DIRNAME, 'static').replace('\\', '/'),
+    os.path.join(DIRNAME, 'static'),
 )
 
 TEMPLATE_DIRS = (
@@ -109,7 +110,7 @@ TEMPLATE_DIRS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     # 'django.core.context_processors.request',
     # 'django.contrib.auth.context_processors.auth',
-    # 'django.core.context_processors.static',
+    'django.core.context_processors.static',
 
 )
 

@@ -1,0 +1,168 @@
+body {
+    background: #eaeaea;
+}
+.l{float: left}
+.r{float: right}
+#main ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#main .desc {
+    padding-top: 30px;
+    padding-left: 135px;
+}
+
+#main strong {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#step1 .desc2, #step2 .desc2 {
+    margin-left: 30px;
+}
+
+#step1 {
+    height: 200px;
+    background: #911d1d
+}
+
+#step2 {
+    height: 700px;
+    background: #fff;
+}
+
+#step1 strong {
+    color: #fff
+}
+
+#step1 .desc2 {
+    color: gray
+}
+
+#step2 strong {
+    color: #911d1d;
+}
+
+#step2 .desc2 {
+    color: #911d1d;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    text-transform: uppercase;
+    font-family: "Arial";
+}
+
+#btn1 {
+    margin-top: 30px;
+    color: #911d1d;
+    background: #fff;
+}
+
+#btn2 {
+    color: #fff;
+    background: #911d1d;
+}
+
+.dot_blue {
+    width: 44px;
+    height: 44px;
+    background: #6db8cd;
+    border-radius: 28px;
+}
+
+.dot_gray {
+
+    width: 55px;
+    border-radius: 28px;
+    height: 55px;
+    background: #eaeaea;
+}
+
+#showtime {
+    height: 300px;
+    background: #911d1d url(../images/showtime.jpg) no-repeat 50% 55px;
+
+}
+
+#m, #d, #h, #mm {
+    width: 40px
+}
+
+.ct {
+    text-align: center;
+}
+
+#sequence {
+    height: 520px;
+    position: relative;
+}
+
+#sequence li {
+    text-align: center;
+    width: 120px;
+    float: left
+}
+
+#sequence .dot_gray {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    left: 0;
+}
+
+#sequence .dot_blue {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    left: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#dots {
+    height: 100%;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#dots li {
+    height: 100%;
+    position: relative;
+}
+
+#dots p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#dots_wrapper {
+    height: 100%;
+    /* position: absolute;
+     bottom: 0;*/
+    width: 100%;
+}
